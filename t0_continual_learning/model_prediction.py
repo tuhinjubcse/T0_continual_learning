@@ -15,7 +15,7 @@ class ApiT0():
       
       self.is_cuda = is_cuda
       if is_cuda == True:
-        self.model.cuda()
+        self.model.parallelize()
 
   def predict(self, srcs):
 
